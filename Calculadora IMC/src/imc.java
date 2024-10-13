@@ -1,14 +1,13 @@
-package aula.pkg1;
 import javax.swing.JOptionPane;
-public class Aula1 {
-    
+
+public class imc {
     public static double calcular(double peso, double altura){
-        return  peso/(altura*altura); 
+        return  peso/(altura*altura);
     }
     public static void verificar(double peso, double altura, String nome, String sobreNome){
-        
+
         double imc = calcular(peso, altura);
-        
+
         if( imc <18.5 ){
             JOptionPane.showMessageDialog(null, "Olá, " + nome + " " + sobreNome + "! Seu IMC é de " + imc + "Você está abaixo do peso!");
         }
@@ -27,19 +26,19 @@ public class Aula1 {
         if(imc >= 40.0){
             JOptionPane.showMessageDialog(null, "Olá, " + nome + " " + sobreNome + "! Seu IMC é de " + imc + "Você está obeso(Grau 3)!");
         }
-        
+
     }
 
     public static void main(String[] args) {
-        
+
         String  nome      = JOptionPane.showInputDialog("Primeiro Nome");
         String  sobreNome = JOptionPane.showInputDialog("Sobrenome");
-        
+
         int     idade   =  Integer.parseInt(JOptionPane.showInputDialog("Sua idade:"));
-        
+
         double  peso    =  Double.parseDouble(JOptionPane.showInputDialog("Seu Peso em Kg:"));
         double  altura  = Double.parseDouble(JOptionPane.showInputDialog("Seu Altura em M:"));
-        
+
         verificar(peso, altura, nome, sobreNome);
     }
 }
