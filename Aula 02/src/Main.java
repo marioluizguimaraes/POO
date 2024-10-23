@@ -12,10 +12,10 @@ public class Main {
 
     public static int diasNoMesSwitch1(int mes){
         switch(mes){
-            case 1, 3, 5, 8, 7, 10, 12: return 31;
-            case 4, 6, 9, 11          : return 30;
-            case 2          : return 30;
-            default                   : return 0;
+            case 1, 3, 5, 8, 7, 10, 12  : return 31;
+            case 4, 6, 9, 11            : return 30;
+            case 2                      : return 28;
+            default                     : return 0;
         }
     }
 
