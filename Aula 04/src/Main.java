@@ -20,7 +20,6 @@ public class Main {
         */
         Q6.ValidacaooNota();
         System.out.println("------------------------------");
-*/
 
     }
 }
