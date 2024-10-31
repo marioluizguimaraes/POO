@@ -19,8 +19,7 @@ public class Q6 {
             nota2 = sc.nextInt();
         }
 
-        System.out.print("media = " + (nota1+nota2)/2);
-
-
+        double media = (double) (nota1 + nota2) /2;
+        System.out.printf("media = %.2f ", media);
     }
 }

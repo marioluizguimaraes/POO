@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("------------------------------");
+       /* System.out.println("------------------------------");
         Q1.listaDeAlunos();
         System.out.println("------------------------------");
         Q2.numPares();
@@ -16,6 +16,7 @@ public class Main {
         System.out.println("------------------------------");
         Q5.maiorPosicao();
         System.out.println("------------------------------");
+        */
         Q6.ValidacaooNota();
         System.out.println("------------------------------");
     }
