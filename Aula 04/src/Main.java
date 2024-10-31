@@ -7,7 +7,8 @@ public class Main {
 
         System.out.println("------------------------------");
         Q1.listaDeAlunos();
-        System.out.println("------------------------------");
+
+        /*System.out.println("------------------------------");
         Q2.numPares();
         System.out.println("------------------------------");
         Q3.restoDois();
@@ -18,5 +19,7 @@ public class Main {
         System.out.println("------------------------------");
         Q6.ValidacaooNota();
         System.out.println("------------------------------");
+*/
+
     }
 }
