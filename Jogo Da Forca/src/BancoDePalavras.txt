@@ -1,0 +1,6 @@
+mario
+duda
+carro
+moto
+animal
+cobra
