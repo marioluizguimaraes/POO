@@ -19,7 +19,7 @@ public class Boneco {
         this.boneco[linha][coluna] = " ";
     }
 
-    public String apararecer(){
+    public String aparecer(){
         return  this.getBoneco(0,0) + this.getBoneco(0,1) + this.getBoneco(0,2) + this.getBoneco(0,3) + this.getBoneco(0,4) + '\n' +
                 this.getBoneco(1,0) + this.getBoneco(1,1) + this.getBoneco(1,2) + this.getBoneco(1,3) + this.getBoneco(1,4) + '\n' +
                 this.getBoneco(2,0) + this.getBoneco(2,1) + this.getBoneco(2,2) + this.getBoneco(2,3) + this.getBoneco(2,4) + '\n' +

@@ -10,10 +10,10 @@ public class Main {
         //int acertos = 0;
 
         Boneco b1 = new Boneco();
-        System.out.println(b1.apararecer());
+        System.out.println(b1.aparecer());
 
         b1.perderMembro(4,2);
-        System.out.println(b1.apararecer());
+        System.out.println(b1.aparecer());
 
         /*
         System.out.println("Palavra:");
