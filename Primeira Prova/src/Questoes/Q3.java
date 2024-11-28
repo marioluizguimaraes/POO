@@ -20,7 +20,8 @@ public class Q3 {
             for (int x = 0; x<alfabeto.length; x++){
                 if (x - deslocamento < 0){
                     if(Objects.equals(letras[i], alfabeto[x])){
-                        letras[i] = alfabeto[-1*(deslocamento - alfabeto.length)];
+                        System.out.print((alfabeto.length - deslocamento));
+                        letras[i] =  alfabeto[(alfabeto.length - deslocamento)];
                     }
                 }
                 else {
