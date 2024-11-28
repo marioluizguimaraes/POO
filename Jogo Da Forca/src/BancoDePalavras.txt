@@ -1,0 +1,4 @@
+casa
+tomate
+cobra
+cachorro
