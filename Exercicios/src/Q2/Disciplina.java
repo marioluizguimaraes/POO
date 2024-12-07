@@ -4,7 +4,8 @@ public class Disciplina {
     private String nome;
     private int[] notas;
     private boolean aprovado;
-
+    private int mediaParcial;
+    private int mediafinal;
 
     public Disciplina(String nome, int nota1, int nota2, int notaFinal){
         this.notas = new int[3];
@@ -41,10 +42,10 @@ public class Disciplina {
     }
 
     public void setNota(int bimestre, int nota){
-        this.notas[bimestre-1] = bimestre == 1 ?  nota*2 : nota*3;
+        this.notas[bimestre-1] = nota;
     }
 
-    public void setAprovado(boolean status){
+    private void setAprovado(boolean status){
         this.aprovado = status;
     }
 
@@ -57,14 +58,33 @@ public class Disciplina {
     }
 
     public boolean getAprovado(){
+        this.setAprovado(this.getMediaParcial()>=60 || this.getMediafinal()>=60);
         return this.aprovado;
     }
 
-    public boolean aprovar(){
+    public int getMediaParcial(){
         if (this.notas[0] > -1 && this.notas[1] > -1){
-            int media = (this.notas[0] + this.notas[1])/5;
-            this.setAprovado(media >= 60);
+            this.mediaParcial = (this.notas[0]*2 + this.notas[1]*3)/5;
+            return this.mediaParcial;
         }
-        return this.getAprovado();
+        else{
+            System.out.println("ATENÇÃO: o resultado não é válido, pois uma nota ainda não foi cadastrada!");
+            return this.mediaParcial;
+        }
+
+    }
+
+    public int getMediafinal(){
+        if(this.getMediaParcial() >= 60){
+            return this.mediaParcial;
+        }
+        else if (this.notas[2] == -1){
+            System.out.println("ATENÇÃO: o resultado não é válido, pois a nota final ainda não foi cadastrada!");
+            return this.mediafinal;
+        }
+        else{
+            this.mediafinal = (this.notas[0] + this.notas[1] + this.notas[2])/3;
+            return this.mediafinal;
+        }
     }
 }
