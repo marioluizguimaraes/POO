@@ -69,6 +69,7 @@ public class Disciplina {
         }
         else{
             System.out.println("ATENÇÃO: o resultado não é válido, pois uma nota ainda não foi cadastrada!");
+            this.mediaParcial = (this.notas[0]*2 + this.notas[1]*3)/5;
             return this.mediaParcial;
         }
 
