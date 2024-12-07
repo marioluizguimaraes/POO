@@ -72,7 +72,6 @@ public class Disciplina {
             this.mediaParcial = (this.notas[0]*2 + this.notas[1]*3)/5;
             return this.mediaParcial;
         }
-
     }
 
     public int getMediafinal(){
