@@ -23,7 +23,7 @@ public class Main {
         System.out.println(m2.getAprovado());
         */
 
-        
+
 
     }
 }
