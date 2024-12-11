@@ -16,25 +16,13 @@ public class Disciplina {
     }
 
     public Disciplina(String nome, int nota1, int nota2){
-        this.notas = new int[3];
-        this.nome = nome;
-        this.notas[0] = nota1;
-        this.notas[1] = nota2;
-        this.notas[2] = -1;
+        this(nome, nota1, nota2, -1);
     }
     public Disciplina(String nome, int nota1){
-        this.notas = new int[3];
-        this.nome = nome;
-        this.notas[0] = nota1;
-        this.notas[1] = -1;
-        this.notas[2] = -1;
+        this(nome, nota1, -1, -1);
     }
     public Disciplina(String nome){
-        this.notas = new int[3];
-        this.nome = nome;
-        this.notas[0] = -1;
-        this.notas[1] = -1;
-        this.notas[2] = -1;
+        this(nome, -1, -1, -1);
     }
 
     public void setNome(String nome){
@@ -74,14 +62,14 @@ public class Disciplina {
         }
     }
 
-    public int getMediafinal(){
+    public Integer getMediafinal(){
         if(this.getMediaParcial() >= 60){
             return this.mediaParcial;
         }
         else if (this.notas[2] == -1){
             System.out.println("ATENÇÃO: o resultado não é válido, pois a nota final ainda não foi cadastrada!");
             this.mediafinal = (this.notas[0] + this.notas[1])/3;
-            return this.mediafinal;
+            return null;
         }
         else{
             this.mediafinal = (this.notas[0] + this.notas[1] + this.notas[2])/3;
