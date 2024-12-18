@@ -20,7 +20,7 @@ public class Main {
         System.out.println(m1.getMediafinal());
         System.out.println(m1.getAprovado());
 
-        Disciplina m2 = new Disciplina("POO", 100, 10, 100);
+        Disciplina m2 = new Disciplina("POO", 100, 10);
         System.out.println(m2.getMediafinal());
         System.out.println(m2.getAprovado());
 
